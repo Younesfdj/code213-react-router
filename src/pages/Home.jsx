@@ -11,11 +11,6 @@ export default function Home() {
     setData(data.products);
   }
 
-  function handleProductSelect(id) {
-    // alert(id);
-    navigate(`products/${id}`);
-  }
-
   useEffect(() => {
     getProducts();
   }, []);
